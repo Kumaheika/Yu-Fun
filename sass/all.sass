@@ -1,0 +1,45 @@
+@import "compass/css3"
+@import "compass/reset"
+
+*
+  +box-sizing(border-box)
+body
+  font-family: helvetica
+
+/*====  basic  ====*/
+.clearBoth
+  &:before , &:after
+    content: " "
+    display: table
+    clear: both
+
+/*====  layout  ====*/
+.layout_padding
+  padding: 2em
+
+.header, .sidebar, .content, .soushow, .uderLink, .footter
+  @extend .clearBoth
+  @extend .layout_padding
+.warp
+  width: 100%
+.menu
+  width: 100%
+  background: linear-gradient(to bottom, #485053 0%, #3b4447 100%)
+.header
+  
+.main
+  
+.sidebar
+  width: 300px
+  height: 100%
+  margin-left: -330px
+  background: #e30
+  
+.content
+  background: #e99
+  
+.footter
+  height: 80px
+  padding: 2em
+  background: #eee
+  

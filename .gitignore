@@ -1,0 +1,5 @@
+# pass folder
+.sass-cache/*
+psd/*
+sources/*
+erb/*
