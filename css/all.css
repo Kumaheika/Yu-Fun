@@ -50,13 +50,13 @@ a img {
   border: none;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
 * {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -65,15 +65,26 @@ body {
 }
 
 /*====  basic  ==== */
-.clearBoth:before, .header:before, .sidebar:before, .content:before, .soushow:before, .uderLink:before, .footter:before, .clearBoth:after, .header:after, .sidebar:after, .content:after, .soushow:after, .uderLink:after, .footter:after {
+.clearBoth:before, .header:before, .about:before, .main:before, .footter:before, .clearBoth:after, .header:after, .about:after, .main:after, .footter:after {
   content: " ";
   display: table;
   clear: both;
 }
 
-/*====  layout  ==== */
-.layout_padding, .header, .sidebar, .content, .soushow, .uderLink, .footter {
+/*====  Json  ==== */
+.gallery-item {
+  margin-top: 10px;
+}
+
+.gallery-item .is-loading {
+  opacity: 0;
+}
+
+/*====  Layout  ==== */
+.layout_padding, .header, .about, .main, .footter {
+  width: 95%;
   padding: 2em;
+  margin: 0 auto;
 }
 
 .warp {
@@ -82,22 +93,20 @@ body {
 
 .menu {
   width: 100%;
+  padding: 2em;
   background: linear-gradient(to bottom, #485053 0%, #3b4447 100%);
 }
 
-.sidebar {
-  width: 300px;
-  height: 100%;
-  margin-left: -330px;
-  background: #ee3300;
+.about {
+  background: #eee;
 }
 
-.content {
-  background: #ee9999;
+/*====  Moudles  ==== */
+.btn-content li {
+  display: inline-block;
 }
 
 .footter {
   height: 80px;
-  padding: 2em;
-  background: #eeeeee;
+  background: #eee;
 }

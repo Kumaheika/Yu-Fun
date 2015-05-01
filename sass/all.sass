@@ -13,33 +13,38 @@ body
     display: table
     clear: both
 
-/*====  layout  ====*/
-.layout_padding
-  padding: 2em
+/*====  Json  ====*/
+.gallery-item
+  margin-top: 10px
+.gallery-item .is-loading
+  opacity: 0
 
-.header, .sidebar, .content, .soushow, .uderLink, .footter
+/*====  Layout  ====*/
+.layout_padding
+  width: 95%
+  padding: 2em
+  margin: 0 auto
+
+.header, .about, .main, .footter
   @extend .clearBoth
   @extend .layout_padding
 .warp
   width: 100%
 .menu
   width: 100%
+  padding: 2em
   background: linear-gradient(to bottom, #485053 0%, #3b4447 100%)
-.header
-  
+.about
+  background: #eee
+
 .main
-  
-.sidebar
-  width: 300px
-  height: 100%
-  margin-left: -330px
-  background: #e30
-  
-.content
-  background: #e99
+
+/*====  Moudles  ====*/
+.btn-content
+  li
+    display: inline-block
   
 .footter
   height: 80px
-  padding: 2em
   background: #eee
   
