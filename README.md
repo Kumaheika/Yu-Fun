@@ -1,4 +1,5 @@
 ## 前端訓練網站 001 - 玉峰汽車音響
+**** Windows Sublime Text 3 實作串接 Google Doc 小型資料庫 ****
 
 #訓練項目
 - erb 樣板語言
@@ -41,6 +42,9 @@ entry：
 
 ##參考UI
 ####[psd2html](http://www.psd2html.com/?utm_source=cssawards.net&utm_medium=banner&utm_campaign=responsive)
+####[Margo](http://graygrids.com/demos/themes/margo/)
+
+
 
 ##參考資料
 ####Fire.app 官方網站
